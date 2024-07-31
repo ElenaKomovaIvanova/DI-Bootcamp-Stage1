@@ -1,0 +1,26 @@
+body {
+    background-color: #e2ac7f;
+}
+
+div {
+    background-color: #f5f5dc;
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+    text-align: center;
+}
+li {
+    list-style: none;
+    text-align: center;
+    }
+li::first-letter {
+    font-weight: bold;
+    font-size: larger;
+    }
+
+h1, div:not(#wrap) {
+    border: black dotted;
+}
+h1 {
+    margin-bottom: 0px;
+}
