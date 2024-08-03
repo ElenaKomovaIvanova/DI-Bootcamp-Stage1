@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Challenge || Materialize CSS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="/javascript.js"></script>
+</head>
+
+<body>
+  <!--Beginning of the visual content of the document -->
+  <!-- here the navigation bar -->
+  <header>
+    <div>
+      <nav>
+        <div class="nav-wrapper custom-navbar-background">
+          <a href="#" class="row brand-logo right brown-text text-darken-2">Frederick Banting</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger brown-text text-darken-2"><i
+              class="material-icons">menu</i></a>
+          <ul class="left hide-on-med-and-down">
+            <li><a href="#home" class="brown-text text-darken-2">Home</a></li>
+            <li><a href="#biography" class="brown-text text-darken-2">Biography</a></li>
+            <li><a href="#medicalRresearch" class="brown-text text-darken-2">Medical research</a></li>
+            <li><a href="#painting" class="brown-text text-darken-2">Painting</a></li>
+            <li><a href="#awards" class="brown-text text-darken-2">Awards</a></li>
+          </ul>
+        </div>
+
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#biography">Biography</a></li>
+          <li><a href="#medicalRresearch">Medical research</a></li>
+          <li><a href="#painting">Painting</a></li>
+          <li><a href="#awards">Awards</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- main information -->
+
+    <div id="home">
+      <div class="row"><img class="col s12 m8 l8 hide-on-small-only"
+          src="https://i.ibb.co/PhQMYKt/Frederick-Banting-Home.png" alt="Frederick Banting" id="FrederickBantingHome">
+        <img class="col s0 m4 l4 hide-on-small-only" src="https://i.ibb.co/C6PPr4P/quote.gif" alt="Frederick Banting"
+          id="Frederick">
+      </div>
+
+      <div class="row ">
+        <div id="quotes">
+          <p class="hide-on-med-and-up"> Insulin does not belong to me, it belongs to the world.</p>
+          <img class="hide-on-med-and-up" src="https://i.ibb.co/3c7KMdL/Frederick-Banting-Home-S.jpg"
+            alt="Frederick Banting" id="FrederickBantingHomeS">
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+
+
+  <!-- Biography information -->
+  <div id="biography">
+    <h2 class="center-align">Biography
+    </h2>
+    <div>
+      <img src="https://i.ibb.co/x5X8HtZ/Banting-Frederick-Bio.jpg" alt="Banting Frederick"
+        class="circle responsive-img" id="BantingFrederickBio">
+      <!-- notice the "circle" class -->
+    </div>
+    <div>
+      <button class="custom " onclick="openModal('https://www.youtube.com/embed/LhNaIS41eRA')">
+        Video: The story behind the 1923 Nobel Prize in Physiology and Medicine
+      </button>
+    </div>
+
+    <div id="modalWindow" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <iframe width="564" height="364" id="youtube-video" src="https://www.youtube.com/embed/LhNaIS41eRA"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div>
+      <p>
+        Sir Frederick Grant Banting was born on November 14, 1891, in Alliston, Ontario,
+        into a farming family. He developed an early interest in medicine and went on to
+        earn his medical degree from the University of Toronto in 1916. During World War I,
+        he served as a military doctor and was wounded in action, earning the Military Cross
+        for his bravery.
+        After the war, Banting initially worked in a small medical practice in London, Ontario,
+        but his passion for research led him to an academic career. In 1920, while working as
+        an instructor at the University of Western Ontario, he conceived the idea that led to
+        the discovery of insulin. Despite initial setbacks, he persevered, collaborating with
+        Charles Best, under John Macleod’s supervision, and with the biochemical expertise of
+        James Collip. In 1921, they successfully isolated insulin, revolutionizing the
+        treatment of diabetes.
+        For this groundbreaking work, Banting and Macleod received the Nobel Prize in Physiology
+        or Medicine in 1923, making Banting the youngest Nobel laureate in this category. Banting
+        chose not to patent insulin, believing it should be accessible to all. He sold the patent
+        to the University of Toronto for one dollar. Banting continued his research in other medical
+        fields and was also an accomplished painter. Tragically, his life was cut short in an aviation
+        accident in 1941 while serving in the Royal Canadian Air Force during World War II. His legacy
+        lives on through his contributions to medical science and his humanitarian values.
+      </p>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/Frederick_Banting">More about Sir Frederick Grant Banting...</a>
+  </div>
+
+  <!-- Medical research information -->
+  <div id="medicalRresearch">
+    <h2 class="center-align">Medical research
+    </h2>
+    <div>
+      <img src="https://i.ibb.co/f2jD4qp/Banting-Frederick-Research.jpg" alt="" class="circle responsive-img"
+        id="BantingFrederickResearch">
+      <!-- notice the "circle" class -->
+    </div>
+    <div class="container">
+      <div class="card-container">
+        <div class="col s12 m4 card blue-grey darken-1">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">Discovery of Insulin (1920-1921)</span>
+            <blockquote>
+              <p class="red-text text-lighten-4 hide-on-small-only">Banting's most renowned research
+                involved the isolation
+                and discovery of insulin,
+                a hormone crucial for the treatment of diabetes. This work, conducted alongside
+                Charles Best, John Macleod, and James Collip, revolutionized diabetes management.</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="col s12 m4 card blue-grey darken-1  hide-on-small-only">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">Research (1922-1925)</span>
+            <blockquote>
+              <p class="red-text text-lighten-4 hide-on-small-only">Following the discovery of insulin,
+                Banting conducted
+                extensive studies on the
+                islet cells of the pancreas to further understand their role in diabetes and insulin
+                production.</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="col s12 m4 card blue-grey darken-1">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">Sterilization and Storage of Insulin
+              (1923-1925)</span>
+            <blockquote>
+              <p class="red-text text-lighten-4 hide-on-small-only">Banting was involved in research to
+                improve the methods
+                of sterilizing and storing insulin
+                to ensure its safety and efficacy for diabetic patients.</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="col s12 m4 card blue-grey darken-1">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">Cancer Research (1925-1928)</span>
+            <blockquote>
+              <p class="red-text text-lighten-4 hide-on-small-only">Banting conducted early research on
+                cancer, focusing on
+                the potential causes and treatments.
+                He explored the relationship between nutrition, metabolism, and cancer development.</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="col s12 m4 card blue-grey darken-1">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">Muscle Physiology (1928-1930)</span>
+            <blockquote>
+              <p class="red-text text-lighten-4 hide-on-small-only">Banting also conducted research on
+                muscle physiology,
+                exploring the biochemical processes
+                involved in muscle contraction and energy metabolism.</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="col s12 m4 card blue-grey darken-1">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">Silicosis Studies (1930-1935)</span>
+            <blockquote>
+              <p class="red-text text-lighten-4 hide-on-small-only">Banting researched the lung disease
+                silicosis, which
+                affects miners and workers exposed to silica dust.
+                He investigated the pathology of the disease and potential methods of prevention and
+                treatment.</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="col s12 m4 card blue-grey darken-1">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">Biochemical Warfare (1939-1941)</span>
+            <blockquote>
+              <p class="red-text text-lighten-4 hide-on-small-only">During World War II, Banting was
+                involved in research
+                related to biochemical warfare,
+                including the development of protective measures against toxic agents.</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="col s12 m4 card blue-grey darken-1">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">Aviation Medicine (1940-1941)</span>
+            <blockquote>
+              <p class="red-text text-lighten-4 hide-on-small-only">Banting contributed to research in
+                aviation medicine,
+                studying the physiological effects of
+                high altitudes and rapid changes in pressure on pilots and aircrew. This work was
+                particularly
+                relevant during his service in the Royal Canadian Air Force.</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="col s12 m4 card blue-grey darken-1">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">Work on Anti-Shock and Wound Healing
+              (1939-1941)</span>
+            <blockquote>
+              <p class="red-text text-lighten-4 hide-on-small-only">Banting explored methods to prevent
+                shock in injured patients
+                and enhance wound healing,
+                particularly relevant during wartime.</p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/Frederick_Banting">More about Sir Frederick Grant Banting...</a>
+  </div>
+
+  <!-- Painting information -->
+  <div id="painting">
+    <h2 class="center-align">Painting
+    </h2>
+    <div>
+      <img src="https://i.ibb.co/0s3ZJCy/Banting-Frederick-Painting.jpg" alt="" class="circle responsive-img"
+        id="BantingFrederickPainting">
+      <!-- notice the "circle" class -->
+    </div>
+    <p>Sir Frederick Grant Banting is best known for his medical achievements, particularly the discovery of
+      insulin.
+      However, he also had a profound passion for art, particularly painting. Banting found solace in art, which
+      served as a creative outlet alongside his scientific work. His artistic endeavors were influenced by his
+      friendship with A.Y. Jackson, a founding member of the Group of Seven, a renowned group of Canadian
+      landscape
+      painters. This friendship greatly shaped Banting's approach to painting.
+      Banting's artwork primarily features landscapes, often depicting the Canadian wilderness with a keen eye for
+      detail and a deep appreciation for nature's beauty. His paintings reflect a unique blend of scientific
+      precision
+      and artistic expression, capturing the rugged yet serene Canadian landscapes.</p>
+    <div class="container">
+      <div class="card-container">
+        <div class="col s12 l6 card blue-grey darken-1">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">Georgian Bay, Ontario</span>
+            <span class="card-image">
+              <img src="https://i.ibb.co/L6RBXzR/paint1.jpg">
+              <p class="red-text text-lighten-4">27 x 34.5cm (10 5/8 x 13 5/8in),<br>
+                oil on panel</p>
+          </div>
+        </div>
+
+        <div class="col s12 l6 card blue-grey darken-1">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">Rooftops, Quebec City</span>
+            <div class="card-image">
+              <img src="https://i.ibb.co/Xshf2zF/paint2.jpg">
+
+              <p class="red-text text-lighten-4">25 x 32 in 63.5 x 81.3 cm,<br>
+                oil on canvas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 l6 card blue-grey darken-1">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">Cobalt</span>
+            <div class="card-image">
+              <img src="https://i.ibb.co/fDqWNn8/paint3.jpg">
+              <p class="red-text text-lighten-4">8 1/2 x 10 1/2 in 21.6 x 26.7 cm,<br>
+                oil on board</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 l6 card blue-grey darken-1">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">The Lab</span>
+            <div class="card-image">
+              <img src="https://i.ibb.co/m87TDkd/paint4.jpg">
+              <p class="red-text text-lighten-4">9 7/8 x 13 5/8 in 25.1 x 34.6 cm,<br>
+                oil on board</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 l6 card blue-grey darken-1">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">Honey Harbour</span>
+            <div class="card-image">
+              <img src="https://i.ibb.co/tb40Qzr/paint5.jpg">
+              <p class="red-text text-lighten-4">8 1/8 x 10 1/4 in 20.6 x 26 cm,<br>
+                oil on board</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 l6 card blue-grey darken-1">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">French River</span>
+            <div class="card-image">
+              <img src="https://i.ibb.co/fCsh4zD/paint6.jpg">
+
+              <p class="red-text text-lighten-4">21 1/4 x 26 in 54 x 66 cm,<br>
+                oil on canvas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Awards information -->
+  <div id="awards">
+    <h2 class="center-align">Awards
+    </h2>
+    <div class="container">
+      <div class="card-container">
+        <div class="row">
+          <div class="col s12 m12 l12 card blue-grey darken-1">
+            <div class="card-content">
+              <span class="card-title red-text text-lighten-4">Nobel Prize in Physiology or Medicine
+                (1923)</span>
+              <img src="https://i.ibb.co/pP0G5B4/nobel.jpg" alt="" class="responsive-img">
+              <blockquote>
+                <p class="red-text text-lighten-4">Prize motivation: “for the discovery of insulin”.
+                  Awarded jointly with John James Rickard Macleod.</p>
+              </blockquote>
+              <div class="card-action">
+                <a href="https://www.nobelprize.org/prizes/medicine/1923/banting/facts/">More
+                  about...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m3 card blue-grey darken-1">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">Knight Commander of the Order of the British
+              Empire (1934)</span>
+            <blockquote>
+              <p class="red-text text-lighten-4">Knighted by King George V for his services to medicine.
+                This is a
+                significant honor, reflecting his high status and contributions to the British Empire.
+              </p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="col s12 m3 card blue-grey darken-1">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">Companion of the Order of the British Empire
+              (1934)</span>
+            <blockquote>
+              <p class="red-text text-lighten-4">Another prestigious British order,
+                recognizing his significant contributions to medical research.</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="col s12 m3 card blue-grey darken-1">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">Fellow of the Royal Society (1935)</span>
+            <blockquote>
+              <p class="red-text text-lighten-4">Elected as a Fellow of the Royal
+                Society of London for his contributions to science. This is a highly
+                respected honor among scientists and researchers.</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="col s12 m3 card blue-grey darken-1">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">Cameron Prize for Therapeutics, University of
+              Edinburgh (1927)</span>
+            <blockquote>
+              <p class="red-text text-lighten-4">Awarded for his contributions to therapeutics,
+                specifically for
+                the discovery of insulin.</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="col s12 m3 card blue-grey darken-1">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">Military Cross (1919)</span>
+            <blockquote>
+              <p class="red-text text-lighten-4">Awarded for bravery in the field during World War I.</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="col s12 m3 card blue-grey darken-1">
+          <div class="card-content">
+            <span class="card-title red-text text-lighten-4">Canadian Medical Hall of Fame Inductee
+              (1994)</span>
+            <blockquote>
+              <p class="red-text text-lighten-4">Posthumously inducted for his significant
+                contributions to medical science, highlighting his lasting impact on the field.</p>
+            </blockquote>
+            <div class="card-action">
+              <a href="https://www.cdnmedhall.ca/laureates/frederickbanting#">More about...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Footer  -->
+  <footer>
+    <div class="footer-copyright">
+      <div class="left container">
+        © 2024 Copyright Text
+        <a class="grey-text text-lighten-4 right"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <!-- Подключение Materialize JS и зависимости -->
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+
+    let originalSrc = document.getElementById("youtube-video").src;
+
+    function openModal(videoUrl) {
+      document.getElementById("modalWindow").style.display = "block";
+      document.getElementById("youtube-video").src = videoUrl;
+    }
+
+    function closeModal() {
+      document.getElementById("modalWindow").style.display = "none";
+      document.getElementById("youtube-video").src = ""; // Останавливаем видео
+    }
+
+    window.onclick = function (event) {
+      if (event.target == document.getElementById("modalWindow")) {
+        closeModal();
+      }
+    };
+
+    // Initializing side navigation
+    var sidenavElems = document.querySelectorAll(".sidenav");
+    var sidenavInstances = M.Sidenav.init(sidenavElems);
+
+    var menuItems = document.querySelectorAll(".sidenav a");
+    menuItems.forEach(function (menuItem) {
+      menuItem.addEventListener("click", function () {
+        var sidenavInstance = M.Sidenav.getInstance(sidenavElems[0]);
+        sidenavInstance.close();
+      });
+    });
+
+  </script>
+</body>
